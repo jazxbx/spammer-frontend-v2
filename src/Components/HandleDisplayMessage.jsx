@@ -1,6 +1,7 @@
 import HandleDelete from "./HandleDelete";
 import HandleEditMessage from "./HandleEditMessage";
 import HandleLike from "./HandleLike";
+import HandleReply from "./HandleReply";
 
 // import { API } from "../API";
 
@@ -20,7 +21,7 @@ function HandleDisplayMessage({ messages, fetchMessages }) {
             <p className="card-text">{message.text}</p>
             <HandleLike message={message} fetchMessages={fetchMessages} />
             <span className="card-reply">📤</span>
-            {/* <span className="card-edit">edit msg</span> */}
+            <HandleReply message={message} fetchMessages={fetchMessages} />
           </div>
         </div>
       ))}
