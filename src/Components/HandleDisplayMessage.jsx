@@ -1,5 +1,4 @@
-// import { useState } from "react";
-
+import HandleDelete from "./HandleDelete";
 import HandleLike from "./HandleLike";
 
 // import { API } from "../API";
@@ -9,7 +8,9 @@ function HandleDisplayMessage({ messages, fetchMessages }) {
     <div>
       {messages.map((message) => (
         <div key={message.id} className="card">
-          <div className="card-header">x</div>
+          <div className="card-header">
+            <HandleDelete message={message} fetchMessages={fetchMessages} />
+          </div>
           <div className="card-content">
             <p className="card-text">{message.text}</p>
             <HandleLike message={message} fetchMessages={fetchMessages} />
