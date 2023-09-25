@@ -1,8 +1,1 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Spammer is a message board application built using React, Node.js, Prisma, and CockroachDB. It features REST APIs to manage messages and replies. The React front-end fetches data from the Node.js back-end to display messages and enables users to post new messages and replies. Utilizing React, the project offers a user-friendly interface to interact with the message board. React state management allows for the dynamic updating of the message display. Messages are fetched asynchronously from the server and deployed in real-time.The Node.js server handles HTTP requests and serves as a gateway to the CockroachDB via Prisma. Prisma is used for database modeling and CockroachDB ensures data persistence and scalability.
